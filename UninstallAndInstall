@@ -1,0 +1,72 @@
+#!/bin/sh
+
+# 删除libreoffice
+#sudo apt-get remove libreoffice-common
+
+# 删除Amazon的链接
+#sudo apt-get remove unity-webapps-common
+
+# 删掉基本不用的自带软件（用的时候再装)
+#sudo apt-get remove thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot gnome-mines cheese transmission-common gnome-orca webbrowser-app gnome-sudoku landscape-client-ui-install
+ 
+#sudo apt-get remove onboard deja-dup 
+
+# 安装Vim
+#sudo apt-get install vim
+
+# 安装Sublime Text 3
+#sudo add-apt-repository ppa:webupd8team/sublime-text-3    
+#sudo apt-get update    
+#sudo apt-get install sublime-text 
+
+# 安装经典菜单指示器
+sudo add-apt-repository ppa:diesch/testing  
+sudo apt-get update  
+sudo apt-get install classicmenu-indicator  
+
+# 安装系统指示器SysPeek
+sudo add-apt-repository ppa:nilarimogard/webupd8    
+sudo apt-get update    
+sudo apt-get install syspeek    
+
+# 自定义DHCP网络的DNS Server IP地址
+# sudo vim /etc/dhcp/dhclient.conf文件，在第21行#prepend domain-name-servers 127.0.0.1;下一行添加如下2行使用aliyun和114的DNS
+
+# prepend domain-name-servers 114.114.114.114;  
+# prepend domain-name-servers 223.5.5.5; 
+
+# 安装git 和 vpnc
+sudo apt-get install vpnc git 
+
+# 安装axel
+# axel是Linux命令行界面的多线程下载工具，比wget的好处就是可以指定多个线程同时在命令行终端里下载文件。
+sudo apt-get install axel  
+
+# 安装openssh-server
+# 安装之后，就可以在Win下用ssh工具远程登陆了，当然也多了一个安全隐患，如果不想远程登陆本机的话，可以不装openssh-server。
+sudo apt-get install openssh-server  
+
+# 安装CMake和Qt Creator
+# CMake和Qt Creator是Linux下开发C++程序的神器，Ubuntu 15.04已经集成了最新版的Qt Creator （3.1.1）。
+sudo apt-get install cmake qtcreator  
+
+# 安装ExFat文件系统驱动
+# Ubuntu默认不支持exFat文件系统的挂载，需要手动安装exfat的支持
+# 装上exfat-fuse之后就可以挂载exfat分区的磁盘了。
+sudo apt-get install exfat-fuse  
+
+# 安装lnav
+# lnav工具是在终端界面看日志的神器
+sudo apt-get install lnav  
+
+# 安装unrar
+# 系统默认不带解压缩rar文件的功能，手动安装unrar程序
+# 装上之后就可以用命令解压缩rar文件了。
+# 使用如下命令解压缩文件到当前目录。
+# unrar x test.rar  
+sudo apt-get install unrar  
+
+
+
+
+
