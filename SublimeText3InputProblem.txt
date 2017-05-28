@@ -1,0 +1,19 @@
+系统 ：Ubuntu 16.04
+
+解决Sublime text 3 无法输入中文
+
+输入法 ： Fcitx
+
+方法：
+
+sudo apt-get update && sudo apt-get upgrade
+
+克隆项目到本地
+
+git clone https://github.com/lyfeyaj/sublime-text-imfix.git
+
+运行脚本
+
+cd sublime-text-imfix && ./sublime-imfix
+ 
+最后重启 Sublime Text 3 即可。
